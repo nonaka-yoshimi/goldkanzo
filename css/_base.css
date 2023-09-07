@@ -1,0 +1,153 @@
+/*  charset ==================================================== */
+@charset "utf-8";
+
+/* =========================================================
+  format
+========================================================== */
+html{font-size:62.5%;}
+body{
+  font-feature-settings : "palt";
+}
+
+.floatL {
+  float:left;
+}
+.floatR {
+  float:right;
+}
+.alignL {text-align:left; !important line-height:1.1em;}
+.alignC {text-align:center; !important line-height:1.1em;}
+.alignR {text-align:right; !important line-height:1.1em;}
+
+.mg_c {
+  margin-left:auto;
+  margin-right:auto;
+}
+.active {
+  opacity:0.6;
+}
+.arr_h {
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:flex;
+  -webkit-box-lines:multiple;
+  -moz-box-lines:multiple;
+  -webkit-flex-wrap:wrap;
+  -moz-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+.sp {
+  display:none;
+}
+.elem {
+  position:relative;
+}
+@media screen and (max-width:768px) {
+  .floatL {
+    width:100%;
+  }
+  .floatR {
+    width:100%;
+  }
+
+  .pc {
+    display:none;
+  }
+  .sp {
+    display:block;
+  }
+}
+@media screen and (max-width:468px) {
+  body{
+    font-size:3.2vw;
+  }
+}
+/* =========================================================
+	clearfix
+========================================================== */
+.clearFix {
+  overflow: hidden;
+}
+
+* html .clearFix {
+  zoom: 1;
+}
+
+/* =========================================================
+	common
+========================================================== */
+h1 {
+  text-align:center;
+  background: #F7F7F7;
+  padding:1.5% 3%;
+  box-sizing: border-box;
+}
+.white {
+	color:#FFF;
+}
+
+.photo {
+	position:relative;
+}
+.photo p.caption {
+	position:absolute;
+	right:1%;
+	bottom:1%;
+	color:rgba(255,255,255,0.8);
+	opacity:0.9;
+}
+address {
+  font-size: 1.2rem;
+  font-style: normal;
+  text-align: center;
+}
+@media screen and (max-width:1280px) {
+}
+@media screen and (max-width:768px) {
+}
+
+
+/* =========================================================
+	caption
+========================================================== */
+#caption, .captionL, .captionR, .captionC {
+	font-size:1.2rem;
+	padding-top:2px;
+	line-height:1.6rem;
+}
+#caption {
+	width:80%;
+	margin:0 auto;
+	padding-top:40px;
+	padding-bottom:12px;
+}
+.captionL {
+	text-align:left;
+}
+.captionR {
+	text-align:right;
+}
+.captionC {
+	text-align:center;
+}
+@media screen and (max-width:1280px) {
+	#caption {
+		width:96%;
+		margin:0 auto;
+		padding-top:40px;
+		padding-bottom:12px;
+	}
+}
+@media screen and (max-width:768px) {
+	#caption, .captionL, .captionR, .captionC {
+		font-size:1.0rem;	
+	}
+	#caption {
+		width:94%;
+		padding-top:20px;
+	}
+}

@@ -1,0 +1,64 @@
+/*  charset ==================================================== */
+@charset "utf-8";
+
+/* =========================================================
+	fade
+========================================================== */
+.fade,
+.fadeBT,
+.fadeLR,
+.fadeRL {
+	transition: 1.6s;
+	opacity: 0;
+}
+.fade {
+	transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
+}
+.fadeBT {
+	transform: translate(0,60px); 
+	-webkit-transform: translate(0,60px);
+}
+.fadeRL {
+	transform: translate(60px,0); 
+	-webkit-transform: translate(60px,0);
+}
+.fadeLR {
+	transform: translate(-60px,0); 
+	-webkit-transform: translate(-60px,0);
+}
+.mv {
+	opacity: 1;
+	transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
+}
+.delay01 {
+	transition-delay: 0.4s;
+}
+.delay02 {
+	transition-delay: 0.8s;
+}
+.delay03 {
+	transition-delay: 1.2s;
+}
+.delay04 {
+	transition-delay: 1.6s;
+}
+.delay05 {
+	transition-delay: 2.0s;
+}
+.delay06 {
+	transition-delay: 2.4s;
+}
+.delay07 {
+	transition-delay: 1.6s!important;
+}
+.ef-zoom {
+	transform: scale(0, 0);
+	-webkit-transform: scale(0, 0);
+	 transition:  1.6s;
+}
+.zoom {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+}
