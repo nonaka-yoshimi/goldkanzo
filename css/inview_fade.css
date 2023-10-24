@@ -5,9 +5,17 @@
 	fade
 ========================================================== */
 .fade,
+.fade_pc,
+.fade_sp,
 .fadeBT,
+.fadeBT_pc,
+.fadeBT_sp,
 .fadeLR,
-.fadeRL {
+.fadeLR_pc,
+.fadeLR_sp,
+.fadeRL,
+.fadeRL_pc,
+.fadeRL_sp {
 	transition: 1.6s;
 	opacity: 0;
 }
@@ -26,6 +34,42 @@
 .fadeLR {
 	transform: translate(-60px,0); 
 	-webkit-transform: translate(-60px,0);
+}
+@media screen and (min-width:769px) {
+	.fade_pc {
+		transform: translate(0,0); 
+		-webkit-transform: translate(0,0);
+	}
+	.fadeBT_pc {
+		transform: translate(0,60px); 
+		-webkit-transform: translate(0,60px);
+	}
+	.fadeRL_pc {
+		transform: translate(60px,0); 
+		-webkit-transform: translate(60px,0);
+	}
+	.fadeLR_pc {
+		transform: translate(-60px,0); 
+		-webkit-transform: translate(-60px,0);
+	}
+}
+@media screen and (max-width:768px) {
+	.fade_sp {
+		transform: translate(0,0); 
+		-webkit-transform: translate(0,0);
+	}
+	.fadeBT_sp {
+		transform: translate(0,60px); 
+		-webkit-transform: translate(0,60px);
+	}
+	.fadeRL_sp {
+		transform: translate(60px,0); 
+		-webkit-transform: translate(60px,0);
+	}
+	.fadeLR_sp {
+		transform: translate(-60px,0); 
+		-webkit-transform: translate(-60px,0);
+	}
 }
 .mv {
 	opacity: 1;
@@ -50,8 +94,45 @@
 .delay06 {
 	transition-delay: 2.4s;
 }
-.delay07 {
-	transition-delay: 1.6s!important;
+@media screen and (min-width:769px) {
+	.delay01_pc {
+		transition-delay: 0.4s !important;
+	}
+	.delay02_pc {
+		transition-delay: 0.8s !important;
+	}
+	.delay03_pc {
+		transition-delay: 1.2s !important;
+	}
+	.delay04_pc {
+		transition-delay: 1.6s !important;
+	}
+	.delay05_pc {
+		transition-delay: 2.0s !important;
+	}
+	.delay06_pc {
+		transition-delay: 2.4s !important;
+	}
+}
+@media screen and (max-width:768px) {
+	.delay01_sp {
+		transition-delay: 0.4s !important;
+	}
+	.delay02_sp {
+		transition-delay: 0.8s !important;
+	}
+	.delay03_sp {
+		transition-delay: 1.2s !important;
+	}
+	.delay04_sp {
+		transition-delay: 1.6s !important;
+	}
+	.delay05_sp {
+		transition-delay: 2.0s !important;
+	}
+	.delay06_sp {
+		transition-delay: 2.4s !important;
+	}
 }
 .ef-zoom {
 	transform: scale(0, 0);

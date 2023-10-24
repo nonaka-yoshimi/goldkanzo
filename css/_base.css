@@ -4,20 +4,39 @@
 /* =========================================================
   format
 ========================================================== */
-html{font-size:62.5%;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+:root{
+	--gothic: "新ゴ R","Shin Go Regular","メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace, sans-serif;
+	--gothic-black: 'Noto Sans JP', sans-serif;
+	--bgColor01: #e3e5e0;
+	--pattern01: url(/images/bg_triangle.png);
+}
+
+html{font-size:10px;}
 body{
   font-feature-settings : "palt";
 }
 
+.inner{
+	margin: 0 auto;
+}
+@media screen and (min-width:961px) {
+  .inner {
+	max-width: 960px;
+  }
+}
+@media screen and (max-width:960px) {
+}
 .floatL {
   float:left;
 }
 .floatR {
   float:right;
 }
-.alignL {text-align:left; !important line-height:1.1em;}
-.alignC {text-align:center; !important line-height:1.1em;}
-.alignR {text-align:right; !important line-height:1.1em;}
+.alignL {text-align:left!important; line-height:1.1em;}
+.alignC {text-align:center!important; line-height:1.1em;}
+.alignR {text-align:right!important; line-height:1.1em;}
 
 .mg_c {
   margin-left:auto;
@@ -26,40 +45,36 @@ body{
 .active {
   opacity:0.6;
 }
-.arr_h {
-  display:-webkit-box;
-  display:-moz-box;
-  display:-ms-flexbox;
-  display:-webkit-flex;
-  display:-moz-flex;
-  display:flex;
-  -webkit-box-lines:multiple;
-  -moz-box-lines:multiple;
-  -webkit-flex-wrap:wrap;
-  -moz-flex-wrap:wrap;
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
-}
-.sp {
-  display:none;
-}
 .elem {
   position:relative;
 }
-@media screen and (max-width:768px) {
-  .floatL {
-    width:100%;
-  }
-  .floatR {
-    width:100%;
-  }
+.txt{
+	font-weight: 700;
+}
+.colorRed{
+	color: #d11d22;
+}
 
-  .pc {
-    display:none;
-  }
-  .sp {
-    display:block;
-  }
+.impact{
+	background: unset;
+	font-family: var(--gothic-black);
+}
+
+@media screen and (min-width:769px) {
+	.sp {
+		display:none;
+	  }
+}
+@media screen and (max-width:768px) {
+	.floatL {
+		width:100%;
+	}
+	.floatR {
+		width:100%;
+	}
+	.pc {
+		display:none;
+	}
 }
 @media screen and (max-width:468px) {
   body{
@@ -85,6 +100,12 @@ h1 {
   background: #F7F7F7;
   padding:1.5% 3%;
   box-sizing: border-box;
+}
+.bgPattern01{
+	background: #9D1D22 var(--pattern01) repeat top left / auto;
+}
+.bgColor01{
+	background-color: var(--bgColor01);
 }
 .white {
 	color:#FFF;
@@ -117,7 +138,7 @@ address {
 #caption, .captionL, .captionR, .captionC {
 	font-size:1.2rem;
 	padding-top:2px;
-	line-height:1.6rem;
+	line-height:1.6;
 }
 #caption {
 	width:80%;

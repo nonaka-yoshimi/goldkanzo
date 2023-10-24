@@ -13,7 +13,7 @@ $(function(){
 
 //* スクロールすると画像が表示 *//
 $(function() {
-	$('.fade, .fadeBT, .fadeLR, .fadeRL').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+	$('.fade, .fade_pc, .fade_sp, .fadeBT, .fadeBT_pc, .fadeBT_sp, .fadeLR, .fadeLR_pc, .fadeLR_sp, .fadeRL, .fadeRL_pc, .fadeRL_sp').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if(isInView){
 			$(this).stop().addClass('mv');
 		}
