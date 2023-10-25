@@ -193,38 +193,16 @@ body#lp_gold {
 	display: grid;
     grid-template-rows: auto 1fr;
 	background-color: #c80852;
-	background-repeat: no-repeat;
     box-sizing: border-box;
 }
 @media screen and (min-width:1131px) {
 	#mv{
-		/* height: 400px;
-		background-image: url(../images/mv/bg_mv-t.png), url(../images/mv/bg_mv.png);
-		background-position: center center, center center;
-		background-size: contain, contain; */
 		height: 400px;
-		background: url(../images/mv/bg_mv.png) no-repeat center center / cover;
+		background-image: url(../images/mv/bg_mv.png);
+		background-position: center center;
+		background-size: cover;
 	}
 }
-/* @media screen and (max-width:1130px) {
-	#mv{
-		height: max(100vh, 1000px);
-		background-image: url(../images/mv/SP_top_t.png);
-		background-position: center calc(50% - 40%);
-		background-size: 660px;
-	}
-	@media screen and (max-width:768px) {
-		#mv{
-			height: max(100vh, 800px);
-		}
-		@media screen and (max-width:660px) {
-			#mv{
-				background-position: center calc(50% - 40%);
-				background-size: 100%;
-			}
-		}
-	}
-} */
 /*mv-main*/
 .mv-main{
 	display: grid;
@@ -250,10 +228,25 @@ body#lp_gold {
 	}
 }
 @media screen and (max-width:1130px) {
-	.mv-main picture[data-count="1"]{stroke-width: 0ch;
-		padding-top: 30%;
-		margin: 0 auto calc(-10% + -50px) -10%;
+	.mv-main picture[data-count="1"]{
+		margin: 0 auto calc(-10% + -50px);
 		background: url(../images/mv/SP_top_bg.png) no-repeat center top / cover;
+	}
+	@media screen and (min-width:769px) {
+		.mv-main picture[data-count="1"]{
+			text-align: center;
+		}
+		.mv-main picture[data-count="1"] img{
+			width: 65%;
+		}
+	}
+	@media screen and (max-width:768px) {
+		.mv-main picture[data-count="1"]{
+			margin: 0 auto calc(-10% + -50px) -10%;
+			padding-top: 30%;
+			width: 120%;
+			background: url(../images/mv/SP_top_bg.png) no-repeat center top / cover;
+		}
 	}
 }
 .mv-main picture[data-count="2"]{
@@ -283,24 +276,6 @@ body#lp_gold {
 		z-index: 1;
 	}
 }
-/* @media screen and (max-width:1130px) {
-	.mv-main picture{
-		position: relative;
-		z-index: 1;
-		margin: 0 auto;
-		width: min(690px, 90%);
-	}
-	@media screen and (max-width:768px) {
-
-	}
-	@media screen and (max-width:500px) {
-		.mv-main picture{
-			width: 100%;
-		}
-	}
-} */
-
-
 /*point*/
 #point {
 	position: relative;
