@@ -10,7 +10,7 @@
 	--gothic: "新ゴ R","Shin Go Regular","メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace, sans-serif;
 	--gothic-black: 'Noto Sans JP', sans-serif;
 	--bgColor01: #e3e5e0;
-	--pattern01: url(/images/bg_triangle.png);
+	--pattern01: url(../images/bg_triangle.png);
 }
 
 html{font-size:10px;}
@@ -95,12 +95,6 @@ body{
 /* =========================================================
 	common
 ========================================================== */
-h1 {
-  text-align:center;
-  background: #F7F7F7;
-  padding:1.5% 3%;
-  box-sizing: border-box;
-}
 .bgPattern01{
 	background: #9D1D22 var(--pattern01) repeat top left / auto;
 }
